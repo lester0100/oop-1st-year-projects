@@ -61,7 +61,7 @@ This project is a Windows Forms (C#) app for collecting user information and vac
 
 This Windows Forms (C#) demo features an animated loader that advances a ProgressBar, then opens a utility form for uploading and saving images and RTF text. The loader moves labels and shows a Start button when done. The utility form uses standard dialogs, context menus, tooltips, and NotifyIcon feedback for common file tasks.
 
-Key Features
+**Key Features**
 - The loader runs a four-stage animation that moves two labels and updates a ProgressBar. The Start button becomes active only when the animation finishes.
 - Image upload uses OpenFileDialog with image filters to load pictures into a PictureBox. Image save uses SaveFileDialog.
 - Text upload loads RTF files into a RichTextBox using OpenFileDialog with an RTF filter. Text save uses SaveFileDialog, but checks that the RichTextBox is not empty before prompting. If it is empty, the user is notified.
@@ -74,7 +74,7 @@ Project 4: File Handling & Record Update Demo
 This Windows Forms (C#) utility reads records from a Data.txt file and displays them. You can search by last name to load a record for editing. The app updates the file by writing to a temporary support file and then replacing the original file.
 
 
-Key Features
+**Key Features**
 
 - When the app starts, it loads and displays the contents of Data.txt. File I/O uses try/catch blocks to handle access errors.
 - Typing a last name searches Data.txt line by line. When a match is found, the form fills in the FirstName and Age fields and enables the Update and Clear controls so you can edit the record.
