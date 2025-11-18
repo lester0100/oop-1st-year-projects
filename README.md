@@ -14,32 +14,27 @@ This repository contains several C# projects I created during my first year of c
 
 This Windows Forms application consists of six forms: one Main Form that links to five smaller forms. I built this project for the Object-Oriented Programming course to practice Windows Forms UI, event handling, basic business logic, and input validation in C#.
 
-- Program 1: Net Income Calculator - This program calculates net income by subtracting deductions from gross income, including income tax, SSS, and MI. The result is shown, and you can't edit the fields until you clear them.
+  **-> Program 1: Net Income Calculator** - This program calculates net income by subtracting deductions from gross income, including income tax, SSS, and MI. The result is shown, and you can't edit the fields until you clear them.
 
+  **-> Program 2: Circle Circumference** - You enter a radius, and the program calculates the circumference using the formula 2 × π × radius (with π approximated as 3.1416). The result appears, and the input is locked until you clear it.
 
-- **Program 2: Circle Circumference** - You enter a radius, and the program calculates the circumference using the formula 2 × π × radius (with π approximated as 3.1416). The result appears, and the input is locked until you clear it.
+  **-> Program 3: Final Price (with tax)** - This program takes an initial price and a tax rate (as a multiplier), then calculates the tax and adds it to the price to display the final amount. After calculating, the inputs are disabled until you clear them.
 
-- **Program 3: Final Price (with tax)** - This program takes an initial price and a tax rate (as a multiplier), then calculates the tax and adds it to the price to display the final amount. After calculating, the inputs are disabled until you clear them.
+  **-> Program 4: Net Salary** - This program receives a gross salary and applies a tiered deduction: 10% if the amount exceeds $1,000, otherwise 5%. It displays the net salary and disables input until the field is cleared.
 
-
-
-- **Program 4: Net Salary** - This program receives a gross salary and applies a tiered deduction: 10% if the amount exceeds $1,000, otherwise 5%. It displays the net salary and disables input until the field is cleared.
-
-
-
-- **Program 5: Gross Pay (overtime)** - This program accepts an hourly rate and the number of hours worked, then calculates the gross pay using a 1.5 multiplier when the hours exceed 40 (applied to all hours in this version). It displays the pay and locks inputs until you clear them.
+  **-> Program 5: Gross Pay (overtime)** - This program accepts an hourly rate and the number of hours worked, then calculates the gross pay using a 1.5 multiplier when the hours exceed 40 (applied to all hours in this version). It displays the pay and locks inputs until you clear them.
 
 
 
 **Key Features**
 
-  → All forms display results in a label (lblResult) and have a Clear button to reset fields and re-enable inputs.
+- All forms display results in a label (lblResult) and have a Clear button to reset fields and re-enable inputs.
   
-  → Navigation: MainForm opens each ProgramX form using .Show() and hides itself with .Hide(). Program forms can also be moved to adjacent forms or returned to the MainForm. Some forms have an Application.Exit() button.
+- Navigation: MainForm opens each ProgramX form using .Show() and hides itself with .Hide(). Program forms can also be moved to adjacent forms or returned to the MainForm. Some forms have an Application.Exit() button.
   
-  → Validation (applies to all programs): Each form checks for empty fields and uses double.TryParse to make sure inputs are numbers. If input is empty or invalid, a MessageBox appears and the textbox is selected for correction. Inputs are disabled after a successful calculation.
+- Validation (applies to all programs): Each form checks for empty fields and uses double.TryParse to make sure inputs are numbers. If input is empty or invalid, a MessageBox appears and the textbox is selected for correction. Inputs are disabled after a successful calculation.
   
-  → Inputs are disabled after a successful calculation to prevent accidental changes. The Clear button resets the UI. For stricter business logic, you could add rules like checking for positive numbers, using decimals for money, or applying overtime only to hours over 40.
+- Inputs are disabled after a successful calculation to prevent accidental changes. The Clear button resets the UI. For stricter business logic, you could add rules like checking for positive numbers, using decimals for money, or applying overtime only to hours over 40.
 <hr/>
 
 **Project 2: Vaccination Registration Form**
